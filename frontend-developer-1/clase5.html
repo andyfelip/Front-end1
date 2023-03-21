@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>My Account</title>
+    <style>
+        :root {
+            --white: #FFFFFF;
+            --very-light-pink: #C7C7C7;
+            --text-input-field: #F7F7F7;
+            --hospital-green: #ACD9B2;
+            --black: #000000;
+            --sm: 14px;
+            --md: 18px;
+            --lg: 20px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+
+        .login {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .form-container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 300px;
+
+        }
+
+        .my-account {
+            font-size: var(--lg);
+            text-align: start;
+            margin-bottom: 36px;
+
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .label {
+            font-size: var(--sm);
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .value{
+            font-size: var(--md);
+            color: var(--very-light-pink);
+            margin: 8px 0 32px 0;
+        }
+
+        .secundary-button {
+            background-color: var(--white);
+            color: var(--hospital-green); 
+            width: 100%;
+            height: 50px;
+            border-radius: 8px;
+            border: 1px solid var(--hospital-green);
+            font-size: var(--sm);
+            font-weight: bold;
+            cursor: pointer;
+
+
+        }
+
+        .login-button {
+            margin-top: 14px;
+            margin-bottom: 30px;
+        }
+
+        @media(max-width: 640px) {
+
+            .form-container {
+
+                height: 100%;
+            }
+
+            .form {
+                height: 100%;
+                justify-content: space-between;
+            }
+
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="form-container">
+            <h1 class="my-account">My Account</h1>
+            <form action="/" class="form">
+                <div>
+                    <label for="name" class="label">Name</label>
+                    <p class="value">Andres Avila</p>
+                    <label for="email-address" class="label">Email address</label>
+                    <p class="value">Saga33@outlook.es</p>
+
+                    <label for="password" class="label">Password</label>
+                    <p class="value">********</p>
+
+                </div>
+                <input type="submit" value="Edit" class="secundary-button login-button">
+
+            </form>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
